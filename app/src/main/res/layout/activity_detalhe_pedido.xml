@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhePedidoActivity">
+
+    <TextView
+        android:id="@+id/tvAgredecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Obrigado por comprar conosco!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aqui estão os dados da sua compra:"
+        app:layout_constraintEnd_toEndOf="@+id/tvAgredecimento"
+        app:layout_constraintStart_toStartOf="@+id/tvAgredecimento"
+        app:layout_constraintTop_toBottomOf="@+id/tvAgredecimento" />
+
+    <TextView
+        android:id="@+id/tvNomeDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="32dp"
+        android:text="Nome:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMensagem" />
+
+    <TextView
+        android:id="@+id/tvNomeDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNomeDetalhe"
+        app:layout_constraintStart_toEndOf="@+id/tvNomeDetalhe"
+        app:layout_constraintTop_toTopOf="@+id/tvNomeDetalhe"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvPizzaDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pizza Selecionada:"
+        app:layout_constraintStart_toStartOf="@+id/tvNomeDetalhe"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeDetalhe" />
+
+    <TextView
+        android:id="@+id/tvPizzaDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPizzaDetalhe"
+        app:layout_constraintStart_toEndOf="@+id/tvPizzaDetalhe"
+        app:layout_constraintTop_toTopOf="@+id/tvPizzaDetalhe"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvTamanhoDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tamanho:"
+        app:layout_constraintStart_toStartOf="@+id/tvPizzaDetalhe"
+        app:layout_constraintTop_toBottomOf="@+id/tvPizzaDetalhe" />
+
+    <TextView
+        android:id="@+id/tvTamanhoDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTamanhoDetalhe"
+        app:layout_constraintStart_toEndOf="@+id/tvTamanhoDetalhe"
+        app:layout_constraintTop_toTopOf="@+id/tvTamanhoDetalhe"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvFormaDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forma de pgto:"
+        app:layout_constraintStart_toStartOf="@+id/tvTamanhoDetalhe"
+        app:layout_constraintTop_toBottomOf="@+id/tvTamanhoDetalhe" />
+
+    <TextView
+        android:id="@+id/tvFormaDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFormaDetalhe"
+        app:layout_constraintStart_toEndOf="@+id/tvFormaDetalhe"
+        app:layout_constraintTop_toTopOf="@+id/tvFormaDetalhe"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
